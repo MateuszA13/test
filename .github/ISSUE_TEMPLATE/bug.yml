@@ -1,0 +1,27 @@
+name: Bug Report
+description: Zgłoś błąd
+title: "[BUG]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Co się stało?
+      description: Opisz błąd
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Wersja
+      placeholder: np. v1.2.3
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Priorytet
+      options:
+        - niski
+        - średni
+        - wysoki
